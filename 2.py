@@ -1,27 +1,3 @@
-# class Parentheses:
-#     def generate(self, n: int) -> list[str]:
-
-#      stack = []
-#      res = []
-
-#     def last(open, close):
-#         if open == close == n:
-#             res.append("".join(stack))
-#             return
-        
-#         if open < n:
-#             stack.append("(")
-#             last(open + 1, close)
-#             stack.pop()
-
-#         if close < open:
-#             stack.append(")")
-#             last(open, close + 1)
-#             stack.pop()
-
-# last(0,0)
-# retun res
-
 def parentheses(n, open, close, s, ans):
     
     if(open == n and close == n):
